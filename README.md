@@ -1,14 +1,13 @@
-                                                                                  Date: 08 May 2019
-#Acknowledgement
+# Acknowledgement
 We gratefully acknowledge for the assistance, cooperation, guidance and clarifications provided during the development of the Unicrypto : Bitcoin Wallet website. My extreme gratitude to Mr. Rahul Rastogi who guided me throughout the project. Without his willing disposition, spirit of accommodation, frankness, timely clarification and above all faith in us, this project could not have been completed in due time. His readiness to discuss all important matters at work deserves special attention.
 
-#About Unicrypto
+# About Unicrypto
 Unicrypto is a Decentralized Client Side Bitcoin wallet service:
  Decentralized applications (dApps) are applications that run on a P2P network of computers rather than a single computer. dApps, have existed since the advent of P2P networks. They are a type of software program designed to exist on the Internet in a way that is not controlled by any single entity.
 •	Decentralized applications don’t necessarily need to run on top of a blockchain network. BitTorrent, Popcorn Time, BitMessage, Tor, are all traditional dApps that run on a P2P network, but not on a Blockchain (which is a specific kind of P2P network).
 •	As opposed to simple smart contracts, in the classic sense of Bitcoin, that sends money from A to B, dApps have an unlimited number of participants on all sides of the market.
               
-#What is bitcoin?
+# What is bitcoin?
 Bitcoin is a digital currency already used all over the world. Unlike other currencies like Dollar and Euro, bitcoin does not exist in paper form and exist only digitally. It can be used as an investment opportunity or to purchase any goods similar to other currencies.
 Why use bitcoin?
 Bitcoin price has been rising since its creation and is gaining popularity which in further increases it’s value. Bitcoins are becoming a mainstream currency which is not controlled by the government, therefore, makes you the true owner of this asset.
@@ -19,7 +18,7 @@ To start, we’ll create a wallet. Bitcoin wallets are not stored in the blockch
 •	Public key hash (PKH)
 •	Public address
 •	Private key WIF (wallet import format)
-#Wallets Are Not Online
+# Wallets Are Not Online
 An important concept to understand is that you do not need to be online to generate a Bitcoin wallet address. Because the methods to generate an address rely on math, there is no need to connect to a separate server, website or other service.
 Let’s look at the code to generate a private key:
 Api : SecureRandom/coinjs
@@ -29,7 +28,7 @@ Output : > Private key created:  66bbce88a18fb9170b89d372e9ec41e3dcf50e24ef8d8ab
 Now, what is it? Well, you might have been able to tell that it is a 32-bytearray in binary. Since there are 8 bits in a byte, that makes 256 bits.
 If you want to know the probability of someone else generating the same private key as you, then it is 2²⁵⁶, which is an astronomically² large number
 
-#2²⁵⁶, but not quite
+# 2²⁵⁶, but not quite
 Not every private key like this is valid. Only private keys that are less than the following value (in hexadecimal) work with Bitcoin: 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140.
 This is because Bitcoin uses elliptic curve cryptography (ECC) and can only accept private keys below that number. In case that wasn’t enough, the version of elliptic curve cryptography that Bitcoin uses is called secp256k
 Our Revised Code :
@@ -69,7 +68,7 @@ function createPublicAddress(publicKeyHash) {
   return address;
 }
 Output : Public Address : 15pDZZny3jmbiJiTe4vcGg5aoWWsyJtiSg
-#Generating Private Key WIF
+# Generating Private Key WIF
 WIF stands for “wallet import format.” It was a standard introduced to make it easier and more secure for users to migrate wallets from different services.
 The process of generating a private key WIF is not very different from generating a public address. Here are the steps:
 •	We add a prefix to the private key. In this case it is “80” (in hexadecimal)
@@ -91,4 +90,4 @@ Public Key : 15pDZZny3jmbiJiTe4vcGg5aoWWsyJtiSg
 Private Key : 5Jga8XX1eZrXhi8abPyDhS89hUU9nfXv3AT38zk2whvuhbwP5ch
 
 
-Developer : Yash Mishra
+# Developer : Yash Mishra
