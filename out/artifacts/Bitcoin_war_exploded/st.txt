@@ -1,0 +1,33 @@
+# Test Planning
+-----------------
+1.Preparing a Test plan 
+2.scope management : Deciding Feature to be tested or not
+ex : Mobile Phones, Softwares etc..
+->Features that are new and critical for new release
+->Feature whose faliure can be catastrophy
+->Features that are expected to be complex to test.
+->Features which are extensions of earlier features that have been defecte.
+3.Deciding test approch and stratagies.
+4.setting up criteria for testing.
+5.Identify responsibility, staffing and traning needs.
+6.Identify resources requirement.
+7.* Testing task : size and effort estimation (FPA, COCOMO)
+8.Activity breakdown and scheduling.
+
+# Test Management
+------------------
+1.Choise of Standerds.
+2.Test People Management.
+3.Intigrating with product release.
+
+# Test process
+---------------
+1.Putting together and base lining a test plan.
+2.Test Case specification
+3.Update tracebility Matrix
+4.Identifying Possible candidates for automation.
+5.Execute test cases and keeping tracebility matrix.
+6.Collect analysis Matrix
+7.Preparing est summary report
+8.Recomanding product release criteria.
+

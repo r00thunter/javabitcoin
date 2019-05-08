@@ -1,0 +1,12 @@
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.card {
+   border-radius: 5px;
+   box-shadow: 0 6px 14px 0 rgba(33,35,68,.1)!important;
+}
+
+.kpi-value {
+    font-weight: 500 !important;
+}
